@@ -92,7 +92,8 @@ def run_pytorch_yolov5_480(variant="yolov5s"):
     pixel_size = 480  # image pixel size
 
     # Load data sample
-    url = "https://raw.githubusercontent.com/pytorch/hub/master/images/dog.jpg"
+    url = "http://images.cocodataset.org/val2017/000000039769.jpg"
+    #"https://raw.githubusercontent.com/pytorch/hub/master/images/dog.jpg"
     image = Image.open(requests.get(url, stream=True).raw).convert("RGB")
 
     # Data preprocessing on Host
